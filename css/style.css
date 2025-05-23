@@ -1,0 +1,121 @@
+/* 基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 960px; /* PC画面での最大幅 */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* PC表示では横並び */
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ヒーローセクション */
+#hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero .hero-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* セクション共通 */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* 実績セクション */
+.work-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.work-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --------------------------------------------------
+レスポンシブデザイン（スマホ向け調整）
+-------------------------------------------------- */
+@media (max-width: 768px) { /* 768px以下の画面幅で適用 */
+    header nav ul {
+        flex-direction: column; /* スマホでは縦並び */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 15px; /* スマホではパディングを少し小さく */
+    }
+
+    #hero .hero-content {
+        padding: 0 10px; /* スマホでは左右の余白を調整 */
+    }
+
+    /* 必要に応じて、各セクションのレイアウトを調整 */
+}
